@@ -3,51 +3,41 @@
     "browser": true,
     "es2021": true,
     "node": true,
-    "jest": true,
+    "jest": true
   },
   "extends": [
     "plugin:react/recommended",
     "airbnb",
     "plugin:@typescript-eslint/recommended",
     "prettier/@typescript-eslint",
-    "prettier/airbnb",
     "plugin:prettier/recommended"
   ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
     },
-    "ecmaVersion": 12,
+    "ecmaVersion": 2017,
     "sourceType": "module"
   },
-  "plugins": [
-    "react",
-    "@typescript-eslint",
-    "prettier"
-  ],
+  "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
     "prettier/prettier": "error",
     "no-use-before-define": "off",
     "jsx-a11y/anchor-is-valid": "off",
     "react/jsx-props-no-spreading": "off",
-    "react/require-default-props": "off",
-    "@typescript-eslint/no-use-before-define": [
-      "error"
-    ],
+    "@typescript-eslint/no-use-before-define": ["error"],
     "react/jsx-one-expression-per-line": "off",
     "space-before-function-paren": "off",
     "react/prop-types": "off",
+    "@typescript-eslint/camelcase": "off",
     "react/jsx-filename-extension": [
       2,
-      {
-        "extensions": [
-          ".js",
-          ".jsx",
-          ".ts",
-          ".tsx"
-        ]
-      }
+      { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
     ],
     "@typescript-eslint/explicit-function-return-type": [
       "error",
