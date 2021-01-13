@@ -12,6 +12,12 @@ const Container = styled.div`
     width: 100%;
     max-width: 300px;
   }
+
+  @media (max-width: 520px) {
+    img {
+      max-width: 240px;
+    }
+  }
 `;
 
 export default Container;

@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { loadingAnimation } from '../../styles/pageStyles/baseStyling';
 
 interface ContainerProps {
   isLoading?: boolean;
@@ -28,33 +29,7 @@ export const Container = styled.div<ContainerProps>`
             visibility: hidden;
           }
 
-          @keyframes load {
-            from {
-              left: -500px;
-            }
-            to {
-              left: 100%;
-            }
-          }
-
-          &::before {
-            content: '';
-            display: block;
-            position: absolute;
-            left: -500px;
-            top: 0;
-            height: 100%;
-            width: 500px;
-            background: ${`
-              linear-gradient(
-                to right,
-                transparent 10%,
-                ${props.theme.colors.primaryBright} 50%,
-                transparent 90%
-              )
-            `};
-            animation: load 1s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-          }
+          ${loadingAnimation}
         `
       : ''}
 `;

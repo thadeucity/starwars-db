@@ -12,6 +12,10 @@ const Container = styled.div`
   justify-content: center;
 
   border-radius: 16px;
+
+  @media (max-width: 520px) {
+    padding: 16px;
+  }
 `;
 
 export default Container;

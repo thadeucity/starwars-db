@@ -18,7 +18,7 @@ const BodyCard = ({
   isLoading = false,
 }: CardProps): React.ReactElement => {
   return (
-    <Link href={linkUrl}>
+    <Link href={linkUrl} prefetch={false}>
       <Container isLoading={isLoading}>
         <ImageContainer>
           <Image src={imageUrl} alt={title} layout="fill" quality={85} />

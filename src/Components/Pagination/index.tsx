@@ -25,6 +25,8 @@ const Pagination = ({
           shape="rounded"
           variant="outlined"
           color="primary"
+          siblingCount={1}
+          boundaryCount={1}
         />
       </Container>
     </MuiThemeProvider>

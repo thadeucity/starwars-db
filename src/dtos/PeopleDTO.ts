@@ -14,6 +14,4 @@ export default interface PeopleDTO {
   starships: string[];
   vehicles: string[];
   url: string;
-  created: string;
-  edited: string;
 }

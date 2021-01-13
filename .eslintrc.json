@@ -27,6 +27,7 @@
   "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
     "prettier/prettier": "error",
+    "camelcase": "off",
     "no-use-before-define": "off",
     "jsx-a11y/anchor-is-valid": "off",
     "react/jsx-props-no-spreading": "off",
