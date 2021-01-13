@@ -21,12 +21,7 @@ const BodyCard = ({
     <Link href={linkUrl}>
       <Container isLoading={isLoading}>
         <ImageContainer>
-          <Image
-            src="https://source.unsplash.com/random/800x800"
-            alt={title}
-            layout="fill"
-            quality={85}
-          />
+          <Image src={imageUrl} alt={title} layout="fill" quality={85} />
         </ImageContainer>
         <CardTitle>{title}</CardTitle>
       </Container>
