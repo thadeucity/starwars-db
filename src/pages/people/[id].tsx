@@ -184,7 +184,13 @@ const Character = ({
 export default Character;
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = [];
+  const ids = Array.from({ length: 83 }, (_, i) => i + 1);
+
+  const paths = ids.map(idNumber => {
+    return {
+      params: { id: `${idNumber}` },
+    };
+  });
 
   return {
     paths,
@@ -231,6 +237,6 @@ export const getStaticProps: GetStaticProps<CharacterProps> = async context => {
 
   return {
     props: fullCharacter,
-    revalidate: 60 * 60 * 24,
+    revalidate: 60 * 60 * 24 * 5,
   };
 };
