@@ -25,6 +25,7 @@ import api from '../../services/api';
 
 import Header from '../../Components/Header';
 import BodyCard from '../../Components/BodyCard';
+import Footer from '../../Components/Footer';
 
 import parseCharacter from '../../utils/parseCharacter';
 
@@ -175,6 +176,7 @@ const Character = ({
           </CharacterData>
         </BodyCard>
       </Content>
+      <Footer />
     </Container>
   );
 };

@@ -9,6 +9,7 @@ import Header from '../Components/Header';
 import BodyCard from '../Components/BodyCard';
 import Card from '../Components/Card';
 import Pagination from '../Components/Pagination';
+import Footer from '../Components/Footer';
 
 import extractQueryParams from '../utils/extractQueryParams';
 import parseCharacter from '../utils/parseCharacter';
@@ -96,6 +97,7 @@ const Home = ({ people, pageCount }: HomeProps): React.ReactElement => {
           />
         </BodyCard>
       </Content>
+      <Footer />
     </Container>
   );
 };
