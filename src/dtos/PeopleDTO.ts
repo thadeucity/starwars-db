@@ -1,3 +1,4 @@
+/* eslint camelcase: "off" */
 export default interface PeopleDTO {
   name: string;
   birth_year: string;
