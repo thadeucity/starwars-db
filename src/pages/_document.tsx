@@ -48,8 +48,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
 
-          {/* TODO - Change Favicon */}
-          <link rel="icon" href="my favicon link" />
+          <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>
           <Main />

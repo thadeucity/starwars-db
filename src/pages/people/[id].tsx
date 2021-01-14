@@ -2,7 +2,6 @@ import React, { useMemo } from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { useRouter } from 'next/dist/client/router';
 import Image from 'next/image';
-import Head from 'next/head';
 import Link from 'next/link';
 
 import {
@@ -26,6 +25,8 @@ import api from '../../services/api';
 import Header from '../../Components/Header';
 import BodyCard from '../../Components/BodyCard';
 import Footer from '../../Components/Footer';
+
+import SEO from '../../Components/SEO';
 
 import parseCharacter from '../../utils/parseCharacter';
 
@@ -151,9 +152,7 @@ const Character = ({
 
   return (
     <Container>
-      <Head>
-        <title>Star Wars DB</title>
-      </Head>
+      <SEO title={name || ''} image={imageUrl || ''} />
 
       <Content>
         <Header />

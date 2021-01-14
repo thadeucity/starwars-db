@@ -1,7 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { useRouter } from 'next/dist/client/router';
 import { GetStaticProps } from 'next';
-import Head from 'next/head';
 
 import api from '../services/api';
 
@@ -10,6 +9,8 @@ import BodyCard from '../Components/BodyCard';
 import Card from '../Components/Card';
 import Pagination from '../Components/Pagination';
 import Footer from '../Components/Footer';
+
+import SEO from '../Components/SEO';
 
 import extractQueryParams from '../utils/extractQueryParams';
 import parseCharacter from '../utils/parseCharacter';
@@ -72,9 +73,7 @@ const Home = ({ people, pageCount }: HomeProps): React.ReactElement => {
 
   return (
     <Container>
-      <Head>
-        <title>Star Wars DB</title>
-      </Head>
+      <SEO title="Home" image="/Star_Wars_logo.svg" />
 
       <Content>
         <Header />
