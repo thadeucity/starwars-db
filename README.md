@@ -12,7 +12,7 @@
 
 Star Wars Character Database is a small Next.js project to give a fast and friendly interface to the [SWAPI Api](https://swapi.dev/).
 
-You can access the working prototype [**-HERE-**](starwars-db-6t095ddge.vercel.app)
+You can access the working prototype [**-HERE-**](https://starwars-db.thadeucity.vercel.app/)
 
 <img alt="Star Wars Data" src="./readme-img.jpg"/>
 
