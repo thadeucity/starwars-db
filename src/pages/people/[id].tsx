@@ -186,7 +186,9 @@ export default Character;
 export const getStaticPaths: GetStaticPaths = async () => {
   const ids = Array.from({ length: 83 }, (_, i) => i + 1);
 
-  const paths = ids.map(idNumber => {
+  const filteredIds = ids.filter(id => id !== 17); // id 17 is broken;
+
+  const paths = filteredIds.map(idNumber => {
     return {
       params: { id: `${idNumber}` },
     };
