@@ -13,6 +13,8 @@ const Container = styled.div`
 
   border-radius: 16px;
 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
   @media (max-width: 520px) {
     padding: 16px;
   }
